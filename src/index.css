@@ -1,0 +1,167 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Estilos personalizados para la tabla */
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Estilos para los estados de factura */
+.badge-pagado {
+  background-color: #198754;
+}
+
+.badge-pendiente {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.badge-vencida {
+  background-color: #dc3545;
+}
+
+/* Animaciones para el modal */
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease-out;
+}
+
+/* Mejoras en la responsividad */
+@media (max-width: 768px) {
+  .table-responsive {
+    font-size: 14px;
+  }
+  
+  .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Dashboard Styles */
+.dashboard .card {
+  border-radius: 0.375rem;
+  border: 1px solid #e3e6f0;
+}
+
+.dashboard .card-header {
+  border-bottom: 1px solid #e3e6f0;
+  background-color: #f8f9fc;
+}
+
+.dashboard .border-left-primary {
+  border-left: 0.25rem solid #4e73df !important;
+}
+
+.dashboard .border-left-success {
+  border-left: 0.25rem solid #1cc88a !important;
+}
+
+.dashboard .border-left-warning {
+  border-left: 0.25rem solid #f6c23e !important;
+}
+
+.dashboard .border-left-danger {
+  border-left: 0.25rem solid #e74a3b !important;
+}
+
+.dashboard .avatar-sm {
+  width: 32px;
+  height: 32px;
+}
+
+.dashboard .recharts-default-tooltip {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid #ddd !important;
+  border-radius: 4px;
+  padding: 10px !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.dashboard .recharts-tooltip-item {
+  color: #333 !important;
+  font-size: 12px;
+}
+
+/* Animaciones para transiciones */
+.dashboard {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mejoras de responsividad para dashboard */
+@media (max-width: 768px) {
+  .dashboard .card-body {
+    padding: 1rem;
+  }
+  
+  .dashboard .recharts-wrapper {
+    font-size: 12px;
+  }
+  
+  .dashboard .h4, .dashboard .h5, .dashboard .h6 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Estilos para botones del dashboard */
+.dashboard .btn-group .btn {
+  font-size: 0.875rem;
+}
+
+/* Estilos para tooltips personalizados */
+.custom-tooltip {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.custom-tooltip p {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* Scroll personalizado para tablas en dashboard */
+.dashboard .table-responsive {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.dashboard .table-responsive::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dashboard .table-responsive::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.dashboard .table-responsive::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 10px;
+}
+
+.dashboard .table-responsive::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
